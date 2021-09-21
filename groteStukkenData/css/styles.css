@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+li img {
+  width: 3em;
+  margin-left: 2em;
+  height: auto;
+}
