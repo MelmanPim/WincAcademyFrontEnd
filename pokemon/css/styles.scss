@@ -1,0 +1,30 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+
+h1 {
+    font-family: "Pokemon";
+    src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot");
+    margin-bottom: 0.3em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+}
+
+#getPokemon {
+    padding: 1em 10em;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+#listItems>li {
+    border: black 2px solid;
+    list-style-type: none;
+    margin: 0.5em;
+    min-width: 15em;
+    display: inline-block;
+}
