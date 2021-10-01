@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: royalblue;
+}
+
+footer {
+  display: none;
+}
+
+.container {
+  width: 40em;
+}
+
+input {
+  height: 4em;
+  width: 34em;
+  padding-left: 1em;
+  margin-left: 1em;
+  border: none;
+  border-radius: 0.5em;
+}
+
+button {
+  width: 10em;
+  height: 4em;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+
+button:hover {
+  background-color: green;
+  color: white;
+}
+
+.deleteButton {
+  margin-top: 0.5em;
+  border-radius: 2em;
+  height: 3em;
+  width: 5em;
+  background-color: #7fb1f3;
+}
+
+.deleteButton:hover {
+  background-color: red;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+  padding: 1em 0 1em 0;
+}
+
+ul > div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  padding: 1em;
+  background-color: white;
+}
+
+#toDoList > div:nth-last-of-type(even) {
+  background-color: #f1f1f1;
+}
+
+#toDoList > div:hover {
+  background-color: lightgray;
+}
+
+#toDoList {
+  border-radius: 0.5em;
+  padding-left: 0;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+#toDoForm {
+  width: 40em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#toDoForm > button {
+  margin-right: 1.5em;
+}
+
+main {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
