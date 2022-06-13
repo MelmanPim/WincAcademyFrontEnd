@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;800&display=swap');
+
+/* reset all */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+/* App Header styling */
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #4f8bc9;
+}
+
+.App-header h1 {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 2.5em;
+}
+
+/* Navigation styling */
+
+.navigation {
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #d4e7fa;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 1em;
+      text-decoration: none;
+    
+      &:hover {
+        background-color: #ffb212;
+        color: white;
+      }
+    }
+}
+
+/* OverviewPage styling */
+
+.OverviewPage {
+  padding: 3em 5em;
+
+  h1 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+
+.ChartComponent {
+  border: 5px solid #d4e7fa;
+  border-radius: 5px;
+}
+
+.InputSelect {
+  padding: 1em;
+  background-color: #d4e7fa;
+  width: 100%;
+}
+
+.InputSelectLabel {
+  margin-right: 2em;
+}
+
+/* SelectStudents */
+
+.SelectStudents {
+  padding: 1em;
+  background-color: #d4e7fa;
+  border: 5px solid #d4e7fa;
+  border-radius: 5px;
+  margin-bottom: 1em;
+
+  h2 {
+    margin: 0;
+    padding-bottom: 0.5em;
+    font-weight: 500;
+  }
+}
+
+/* StudentsPage */
+
+.StudentsPage h1 {
+  text-align: center;
+  margin: 2em 0em;
+  margin-bottom: 1em;
+}
+
+.StudentsPageList {
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  li {
+  display: inline-block;
+  background-color: #d4e7fa;
+  width: auto;
+  padding: 1em 1.5em;
+  margin: 0.5em;
+  border: 3px solid #d4e7fa;
+  border-radius: 2px;
+
+  &:hover {
+    border: 3px solid #ffb212;
+    box-shadow: 2px 5px #d1930e;
+  }
+
+  a {
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+  }
+}
+
+/* StudentPage */
+
+.StudentPage {
+  padding: 3em 5em;
+}
+
+.StudentPage h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+/* Component Info styling */
+
+.ComponentInfo {
+  padding: 1em;
+  background-color: #d4e7fa;
+
+  p {
+    margin: 0.5em;
+  }
+}
+
+.fun::before, .averageAll::before {
+  content: "";
+  display: inline-block;
+  background-color: #1d334a;
+  width: 1.5em;
+  height: 0.75em;
+  margin-right: 0.5em;
+}
+
+.difficult::before, .averageOneStudent::before {
+  content: "";
+  display:inline-block;
+  background-color: #4f8bc9;
+  width: 1.5em;
+  height: 0.75em;
+  margin-right: 0.5em;
+}
+
+.averageOneStudent::after, .averageAll::after {
+  content: "average grade of fun + difficulty";
+  margin-left: 2em;
+  color: #1d334a5a;
+  font-size: 0.8em;
+}

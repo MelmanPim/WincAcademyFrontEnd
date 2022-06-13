@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;800&display=swap");
+/* reset all */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+/* App Header styling */
+.App-header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #4f8bc9;
+}
+
+.App-header h1 {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 2.5em;
+}
+
+/* Navigation styling */
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d4e7fa;
+}
+.navigation li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+}
+.navigation li a:hover {
+  background-color: #ffb212;
+  color: white;
+}
+
+/* OverviewPage styling */
+.OverviewPage {
+  padding: 3em 5em;
+}
+.OverviewPage h1 {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.ChartComponent {
+  border: 5px solid #d4e7fa;
+  border-radius: 5px;
+}
+
+.InputSelect {
+  padding: 1em;
+  background-color: #d4e7fa;
+  width: 100%;
+}
+
+.InputSelectLabel {
+  margin-right: 2em;
+}
+
+/* SelectStudents */
+.SelectStudents {
+  padding: 1em;
+  background-color: #d4e7fa;
+  border: 5px solid #d4e7fa;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+.SelectStudents h2 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-weight: 500;
+}
+
+/* StudentsPage */
+.StudentsPage h1 {
+  text-align: center;
+  margin: 2em 0em;
+  margin-bottom: 1em;
+}
+
+.StudentsPageList {
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.StudentsPageList li {
+  display: inline-block;
+  background-color: #d4e7fa;
+  width: auto;
+  padding: 1em 1.5em;
+  margin: 0.5em;
+  border: 3px solid #d4e7fa;
+  border-radius: 2px;
+}
+.StudentsPageList li:hover {
+  border: 3px solid #ffb212;
+  box-shadow: 2px 5px #d1930e;
+}
+.StudentsPageList li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+/* StudentPage */
+.StudentPage {
+  padding: 3em 5em;
+}
+
+.StudentPage h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+/* Component Info styling */
+.ComponentInfo {
+  padding: 1em;
+  background-color: #d4e7fa;
+}
+.ComponentInfo p {
+  margin: 0.5em;
+}
+
+.fun::before, .averageAll::before {
+  content: "";
+  display: inline-block;
+  background-color: #1d334a;
+  width: 1.5em;
+  height: 0.75em;
+  margin-right: 0.5em;
+}
+
+.difficult::before, .averageOneStudent::before {
+  content: "";
+  display: inline-block;
+  background-color: #4f8bc9;
+  width: 1.5em;
+  height: 0.75em;
+  margin-right: 0.5em;
+}
+
+.averageOneStudent::after, .averageAll::after {
+  content: "average grade of fun + difficulty";
+  margin-left: 2em;
+  color: rgba(29, 51, 74, 0.3529411765);
+  font-size: 0.8em;
+}/*# sourceMappingURL=App.css.map */
